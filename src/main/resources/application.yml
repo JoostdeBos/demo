@@ -1,6 +1,14 @@
 micronaut:
   application:
     name: demo
+  server:
+    port: ${SERVER_PORT:8081}
+hello:
+  world:
+    message: "hello from yml"
+    translation:
+      en: "hello world"
+      nl: "hallo wereld"
 netty:
   default:
     allocator:
